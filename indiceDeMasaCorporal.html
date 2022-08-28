@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular IMC</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+    // funcion para saltar linea
+    function saltarLinea(){
+        document.write("<br><br>")
+        document.write("<hr>")
+    }
+    // funcion para imprimir
+    function imprimir(frase){
+        document.write(frase);
+        saltarLinea();
+        
+    }
+
+    /*/ funcion para calcular el IMC
+    function calculaImc(peso,altura,nombre){
+        imc = peso / (altura * altura);
+        imprimir("El imc calculado de " +nombre+ " es: " + imc);
+
+    }
+    imprimir("<h1>"+"Calculando el IMC"+"</h1>");
+    
+
+    calculaImc(80,1.75,"Jorge");
+   
+
+    // funcion mejor simplificada para calcula el IMC
+   
+    function calcularIMC(peso,altura){
+        return (peso / (altura * altura));
+    }
+
+   imprimir("El primedio de IMC calculado de Jorge y Juan es: " + (calcularIMC(80,1.75) + calcularIMC(75,1.70))/2);
+   imprimir("El primedio de IMC calculado de Ana y Dolores es: " + (calcularIMC(60,1.75) + calcularIMC(55,1.60))/2);
+    */
+   // codigo para interactuar con el usuario
+    nombreUsuario = prompt("Ingrese su nombre");
+    pesoUsuario = prompt(nombreUsuario + ", Coloque cuanto pesa");
+    alturaUsuario = prompt(nombreUsuario +", Coloque su altura");
+    
+    imcCalculado = calcularIMC(pesoUsuario,alturaUsuario)
+
+    imprimir(nombreUsuario + ", su imc calculado es: " + imcCalculado)
+   
+
+</script>
+</html>
